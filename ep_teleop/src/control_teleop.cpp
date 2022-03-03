@@ -79,12 +79,12 @@ void ControlTeleop::JoyCallback(const sensor_msgs::JoyConstPtr &msg) {
   } else if (msg->axes[5] == -1 && msg->buttons[4]) {
   } else if (msg->axes[5] == -1 && msg->buttons[5]) {
   } else if (msg->buttons[0]) {
-    arm_position.position.x = 210;
-    arm_position.position.y =-30;
+    arm_position.position.x = 0.21;
+    arm_position.position.y = -0.02;
     arm_position_pub.publish(arm_position);
   } else if (msg->buttons[1]) {
-    arm_position.position.x = 210;
-    arm_position.position.y = 100;
+    arm_position.position.x = 0.21;
+    arm_position.position.y = 0.1;
     arm_position_pub.publish(arm_position);
   } else if (msg->buttons[2]) {
     arm_gripper.x = 1;

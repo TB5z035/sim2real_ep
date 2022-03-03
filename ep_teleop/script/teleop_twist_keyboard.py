@@ -215,13 +215,13 @@ if __name__=="__main__":
             elif key in actionBindings.keys():
                 if key == '1':
                     pose = Pose()
-                    pose.position.x = 210
-                    pose.position.y = -30
+                    pose.position.x = 0.21
+                    pose.position.y = -0.02
                     pub_thread.publisher_pose.publish(pose)
                 elif key == '2':
                     pose = Pose()
-                    pose.position.x = 210
-                    pose.position.y = 100
+                    pose.position.x = 0.21
+                    pose.position.y = 0.10
                     pub_thread.publisher_pose.publish(pose)
                 elif key == '3':
                     point = Point()
