@@ -302,7 +302,7 @@ class graspAruco:
         quat[3] = data.orientation.w
    
         # goal = [0.03, 0.0, 0.07]
-        goal = [0.0, 0.0, 0.1]            
+        goal = [0.03, 0.0, 0.13]
         distance_in_x = tvec[2] - goal[2]
         distance_in_y = abs(tvec[0] - goal[0])
         if (tvec[0]-goal[0]) > 0:
