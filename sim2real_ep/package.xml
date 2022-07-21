@@ -52,7 +52,7 @@
    <exec_depend>ep_bringup</exec_depend>
    <exec_depend>ep_description</exec_depend>
    <exec_depend>ep_teleop</exec_depend>
-   <exec_depend>habitat_info</exec_depend>
+   <!-- <exec_depend>habitat_info</exec_depend> -->
   <export><metapackage/></export>
   <!-- The export tag contains other, unspecified, tags -->
 </package>
