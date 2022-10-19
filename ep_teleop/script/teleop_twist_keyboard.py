@@ -78,7 +78,7 @@ actionBindings={
 class PublishThread(threading.Thread):
     def __init__(self, rate):
         super(PublishThread, self).__init__()
-        self.publisfher = rospy.Publisher('cmd_vel', Twist, queue_size = 1)
+        self.publisher = rospy.Publisher('cmd_vel', Twist, queue_size = 1)
         self.publisher_pose = rospy.Publisher('arm_position', Pose, queue_size = 1)
         self.publisher_point = rospy.Publisher('arm_gripper', Point, queue_size = 1)
         self.x = 0.0
